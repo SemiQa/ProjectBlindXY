@@ -1,0 +1,40 @@
+/*
+ * Gesture detection model template implementation.
+ * Replace the stub logic with the generated code produced by your ML pipeline.
+ */
+
+#include "GestureDetectionModel.h"
+
+#include <stddef.h>
+
+static void clear_buffer(float *buffer, size_t length)
+{
+    if (buffer == NULL)
+        return;
+    for (size_t i = 0; i < length; ++i)
+    {
+        buffer[i] = 0.0f;
+    }
+}
+
+int GESTURE_DETECTION_dequeue(float *data_out)
+{
+    clear_buffer(data_out, 3u);
+    return 0;
+}
+
+int GESTURE_DETECTION_enqueue(const float *data_in)
+{
+    (void)data_in;
+    return 0;
+}
+
+void GESTURE_DETECTION_finalize(void)
+{
+    /* No-op placeholder */
+}
+
+int GESTURE_DETECTION_init(void)
+{
+    return 0;
+}

@@ -1,0 +1,29 @@
+#ifndef GESTURE_DETECTION_MODEL_H
+#define GESTURE_DETECTION_MODEL_H
+
+#include <stdint.h>
+
+/*
+ * Template interface for the gesture detection model.
+ * Concrete projects should replace the stubs below with generated content.
+ * We used DEEPCRAFT Studio to generate the model code, but due to licensing
+ * restrictions we cannot include the generated code directly in this example.
+ * Please refer to the DEEPCRAFT documentation to generate the model code
+ * for your own use case.
+ */
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+    int GESTURE_DETECTION_dequeue(float *data_out);
+    int GESTURE_DETECTION_enqueue(const float *data_in);
+    void GESTURE_DETECTION_finalize(void);
+    int GESTURE_DETECTION_init(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* GESTURE_DETECTION_MODEL_H */
