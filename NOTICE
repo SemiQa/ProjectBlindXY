@@ -15,4 +15,4 @@ generated ML models) is licensed under the GNU General Public License,
 version 3 or (at your option) any later version (see LICENSE-GPL-3.0).
 
 Hardware abstraction layers, BSP, and platform-specific code remain under the
-Cypress (Infineon) EULA (see LICENSE).
+Cypress (Infineon) EULA (see LICENSE-INFINEON).
